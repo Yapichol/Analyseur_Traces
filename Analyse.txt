@@ -1,0 +1,289 @@
+TRAME 1 :
+
+Paquet Ethernet :
+	Adresse MAC destination : f4:ca:e5:5d:ab:14
+	Adresse MAC source      : 80:c5:f2:87:f1:71
+	Type : 0x0800 ( IPv4 )
+Paquet IP :
+	Version : 4
+	Header Length : 0x5 ( 20 octets )
+	Type Of Service : 0x00
+	Total Length : 0x0034 ( 52 octets )
+	Identification : 0x4e8e ( 20110 )
+	Drapeaux : 0x4000
+		Reserved bit   : 0... (non)
+		Don't Fragment : .1.. (oui)
+		More Fragments : ..0. (non)
+		Fragment Offset : 0
+	Time To Live : 128
+	Protocole : 0x06 ( 6 : TCP )
+	Checksum : 0xef36
+	Source      : 192.168.1.15 ( c0.a8.01.0f )
+	Destination : 132.227.118.100 ( 84.e3.76.64 )
+Paquet TCP :
+	Port source      : 60948 ( 0xee14 )
+	Port destination : 80 ( 0x0050 )
+	Numero de sequence : 2843902263
+	Numero de reconnaissance : 0
+	Transport Header Length : 0x8 ( 32 octets )
+	Flags : 0x002
+		Reserved                : 0000 00.. ....
+		Urg (octets urgents ?)  : .... ..0. .... (non)
+		ACK (num reco valide ?) : .... ...0 .... (non)
+		PSH (lecture urgente ?) : .... .... 0... (non)
+		RST (reinit connexion ?): .... .... .0.. (non)
+		SYN (ouvrir connexion ?): .... .... ..1. (oui)
+		FIN (fermer connexion ?): .... .... ...0 (non)
+	Window : 64240 ( 0xfaf0 )
+	Checksum : 0x9e01
+	Urgent pointer : 0 ( 0x0000 )
+	Options:
+		Type : 2 Taille : 4 octets ( Maximum Segment Size )
+		Type : 1 ( no operation )
+		Type : 3 Taille : 3 octets ( Shift )
+		Type : 1 ( no operation )
+		Type : 1 ( no operation )
+		Type : 4 Taille : 2 octets
+
+
+TRAME 2 :
+
+Attention ! Cette trame est incomplete, un probleme est survenu a la ligne 7 !
+
+Paquet Ethernet :
+	Adresse MAC destination : f4:ca:e5:5d:ab:14
+	Adresse MAC source      : 80:c5:f2:87:f1:71
+	Type : 0x0800 ( IPv4 )
+
+
+TRAME 3 :
+
+Paquet Ethernet :
+	Adresse MAC destination : 80:c5:f2:87:f1:71
+	Adresse MAC source      : f4:ca:e5:5d:ab:14
+	Type : 0x0800 ( IPv4 )
+Paquet IP :
+	Version : 4
+	Header Length : 0x5 ( 20 octets )
+	Type Of Service : 0x00
+	Total Length : 0x0034 ( 52 octets )
+	Identification : 0x0000 ( 0 )
+	Drapeaux : 0x4000
+		Reserved bit   : 0... (non)
+		Don't Fragment : .1.. (oui)
+		More Fragments : ..0. (non)
+		Fragment Offset : 0
+	Time To Live : 51
+	Protocole : 0x06 ( 6 : TCP )
+	Checksum : 0x8ac5
+	Source      : 132.227.118.100 ( 84.e3.76.64 )
+	Destination : 192.168.1.15 ( c0.a8.01.0f )
+Paquet TCP :
+	Port source      : 80 ( 0x0050 )
+	Port destination : 60948 ( 0xee14 )
+	Numero de sequence : 2751718719
+	Numero de reconnaissance : 2843902264
+	Transport Header Length : 0x8 ( 32 octets )
+	Flags : 0x012
+		Reserved                : 0000 00.. ....
+		Urg (octets urgents ?)  : .... ..0. .... (non)
+		ACK (num reco valide ?) : .... ...1 .... (oui)
+		PSH (lecture urgente ?) : .... .... 0... (non)
+		RST (reinit connexion ?): .... .... .0.. (non)
+		SYN (ouvrir connexion ?): .... .... ..1. (oui)
+		FIN (fermer connexion ?): .... .... ...0 (non)
+	Window : 5840 ( 0x16d0 )
+	Checksum : 0xf8ce
+	Urgent pointer : 0 ( 0x0000 )
+	Options:
+		Type : 2 Taille : 4 octets ( Maximum Segment Size )
+		Type : 1 ( no operation )
+		Type : 1 ( no operation )
+		Type : 4 Taille : 2 octets
+		Type : 1 ( no operation )
+		Type : 3 Taille : 3 octets ( Shift )
+
+
+TRAME 4 :
+
+Paquet Ethernet :
+	Adresse MAC destination : 80:c5:f2:87:f1:71
+	Adresse MAC source      : f4:ca:e5:5d:ab:14
+	Type : 0x0800 ( IPv4 )
+Paquet IP :
+	Version : 4
+	Header Length : 0x5 ( 20 octets )
+	Type Of Service : 0x00
+	Total Length : 0x0034 ( 52 octets )
+	Identification : 0x0000 ( 0 )
+	Drapeaux : 0x4000
+		Reserved bit   : 0... (non)
+		Don't Fragment : .1.. (oui)
+		More Fragments : ..0. (non)
+		Fragment Offset : 0
+	Time To Live : 51
+	Protocole : 0x06 ( 6 : TCP )
+	Checksum : 0x8ac5
+	Source      : 132.227.118.100 ( 84.e3.76.64 )
+	Destination : 192.168.1.15 ( c0.a8.01.0f )
+Paquet TCP :
+	Port source      : 80 ( 0x0050 )
+	Port destination : 60949 ( 0xee15 )
+	Numero de sequence : 2743002761
+	Numero de reconnaissance : 3121483571
+	Transport Header Length : 0x8 ( 32 octets )
+	Flags : 0x012
+		Reserved                : 0000 00.. ....
+		Urg (octets urgents ?)  : .... ..0. .... (non)
+		ACK (num reco valide ?) : .... ...1 .... (oui)
+		PSH (lecture urgente ?) : .... .... 0... (non)
+		RST (reinit connexion ?): .... .... .0.. (non)
+		SYN (ouvrir connexion ?): .... .... ..1. (oui)
+		FIN (fermer connexion ?): .... .... ...0 (non)
+	Window : 5840 ( 0x16d0 )
+	Checksum : 0x5982
+	Urgent pointer : 0 ( 0x0000 )
+	Options:
+		Type : 2 Taille : 4 octets ( Maximum Segment Size )
+		Type : 1 ( no operation )
+		Type : 1 ( no operation )
+		Type : 4 Taille : 2 octets
+		Type : 1 ( no operation )
+		Type : 3 Taille : 3 octets ( Shift )
+
+
+TRAME 5 :
+
+Paquet Ethernet :
+	Adresse MAC destination : f4:ca:e5:5d:ab:14
+	Adresse MAC source      : 80:c5:f2:87:f1:71
+	Type : 0x0800 ( IPv4 )
+Paquet IP :
+	Version : 4
+	Header Length : 0x5 ( 20 octets )
+	Type Of Service : 0x00
+	Total Length : 0x0028 ( 40 octets )
+	Identification : 0x4e91 ( 20113 )
+	Drapeaux : 0x4000
+		Reserved bit   : 0... (non)
+		Don't Fragment : .1.. (oui)
+		More Fragments : ..0. (non)
+		Fragment Offset : 0
+	Time To Live : 128
+	Protocole : 0x06 ( 6 : TCP )
+	Checksum : 0xef3f
+	Source      : 192.168.1.15 ( c0.a8.01.0f )
+	Destination : 132.227.118.100 ( 84.e3.76.64 )
+Paquet TCP :
+	Port source      : 60948 ( 0xee14 )
+	Port destination : 80 ( 0x0050 )
+	Numero de sequence : 2843902264
+	Numero de reconnaissance : 2751718720
+	Transport Header Length : 0x5 ( 20 octets )
+	Flags : 0x010
+		Reserved                : 0000 00.. ....
+		Urg (octets urgents ?)  : .... ..0. .... (non)
+		ACK (num reco valide ?) : .... ...1 .... (oui)
+		PSH (lecture urgente ?) : .... .... 0... (non)
+		RST (reinit connexion ?): .... .... .0.. (non)
+		SYN (ouvrir connexion ?): .... .... ..0. (non)
+		FIN (fermer connexion ?): .... .... ...0 (non)
+	Window : 513 ( 0x0201 )
+	Checksum : 0x4e70
+	Urgent pointer : 0 ( 0x0000 )
+
+
+TRAME 6 :
+
+Paquet Ethernet :
+	Adresse MAC destination : f4:ca:e5:5d:ab:14
+	Adresse MAC source      : 80:c5:f2:87:f1:71
+	Type : 0x0800 ( IPv4 )
+Paquet IP :
+	Version : 4
+	Header Length : 0x5 ( 20 octets )
+	Type Of Service : 0x00
+	Total Length : 0x0028 ( 40 octets )
+	Identification : 0x4e92 ( 20114 )
+	Drapeaux : 0x4000
+		Reserved bit   : 0... (non)
+		Don't Fragment : .1.. (oui)
+		More Fragments : ..0. (non)
+		Fragment Offset : 0
+	Time To Live : 128
+	Protocole : 0x06 ( 6 : TCP )
+	Checksum : 0xef3e
+	Source      : 192.168.1.15 ( c0.a8.01.0f )
+	Destination : 132.227.118.100 ( 84.e3.76.64 )
+Paquet TCP :
+	Port source      : 60949 ( 0xee15 )
+	Port destination : 80 ( 0x0050 )
+	Numero de sequence : 3121483571
+	Numero de reconnaissance : 2743002762
+	Transport Header Length : 0x5 ( 20 octets )
+	Flags : 0x010
+		Reserved                : 0000 00.. ....
+		Urg (octets urgents ?)  : .... ..0. .... (non)
+		ACK (num reco valide ?) : .... ...1 .... (oui)
+		PSH (lecture urgente ?) : .... .... 0... (non)
+		RST (reinit connexion ?): .... .... .0.. (non)
+		SYN (ouvrir connexion ?): .... .... ..0. (non)
+		FIN (fermer connexion ?): .... .... ...0 (non)
+	Window : 513 ( 0x0201 )
+	Checksum : 0xaf23
+	Urgent pointer : 0 ( 0x0000 )
+
+
+TRAME 7 :
+
+Paquet Ethernet :
+	Adresse MAC destination : f4:ca:e5:5d:ab:14
+	Adresse MAC source      : 80:c5:f2:87:f1:71
+	Type : 0x0800 ( IPv4 )
+Paquet IP :
+	Version : 4
+	Header Length : 0x5 ( 20 octets )
+	Type Of Service : 0x00
+	Total Length : 0x029f ( 671 octets )
+	Identification : 0x4e93 ( 20115 )
+	Drapeaux : 0x4000
+		Reserved bit   : 0... (non)
+		Don't Fragment : .1.. (oui)
+		More Fragments : ..0. (non)
+		Fragment Offset : 0
+	Time To Live : 128
+	Protocole : 0x06 ( 6 : TCP )
+	Checksum : 0xecc6
+	Source      : 192.168.1.15 ( c0.a8.01.0f )
+	Destination : 132.227.118.100 ( 84.e3.76.64 )
+Paquet TCP :
+	Port source      : 60948 ( 0xee14 )
+	Port destination : 80 ( 0x0050 )
+	Numero de sequence : 2843902264
+	Numero de reconnaissance : 2751718720
+	Transport Header Length : 0x5 ( 20 octets )
+	Flags : 0x018
+		Reserved                : 0000 00.. ....
+		Urg (octets urgents ?)  : .... ..0. .... (non)
+		ACK (num reco valide ?) : .... ...1 .... (oui)
+		PSH (lecture urgente ?) : .... .... 1... (oui)
+		RST (reinit connexion ?): .... .... .0.. (non)
+		SYN (ouvrir connexion ?): .... .... ..0. (non)
+		FIN (fermer connexion ?): .... .... ...0 (non)
+	Window : 513 ( 0x0201 )
+	Checksum : 0x0b8d
+	Urgent pointer : 0 ( 0x0000 )
+Paquet HTTP :
+	GET /lmd/licence/public/espace_etudiant/res_info/ HTTP/1.1
+	Host: www-licence.ufr-info-p6.jussieu.fr
+	Connection: keep-alive
+	Cache-Control: max-age=0
+	Upgrade-Insecure-Requests: 1
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+	Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	Referer: http://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/public/espace_etudiant/
+	Accept-Encoding: gzip, deflate
+	Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
+	
+	
+
